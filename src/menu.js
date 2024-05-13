@@ -15,7 +15,7 @@ export function createMenuContent(){
     ourMenu.classList.add('ourMenu');
     ourMenu.innerHTML=`
         <h1>Our Menu</h1>
-        <p>Fish is one of the most wholesome foods that man can eat. In fact, people have been eating fish throughout human history</p>
+        <p>Fish is one of the most wholesome foods that man can eat.In fact, people have been<br> eating fish throughout human history.</p>
     `
     const pizzaCards=document.createElement('div');
     pizzaCards.classList.add('pizzaCards');

@@ -41,9 +41,10 @@ const contContainer=document.querySelector('.contContainer');
 const homeBtn = document.querySelector("#home");
 const menuBtn=document.querySelector('#menu');
 const contBtn=document.querySelector('#contact');
+const bookBtn=document.querySelector('.bookBtn');
 
 window.addEventListener("load", function (e) {
-  contContainer.classList.remove("hidden");
+  homeContainer.classList.remove("hidden");
 });
 
 function handleClicks(){
@@ -58,6 +59,11 @@ homeBtn.addEventListener('click', function(){
 })
 
 menuBtn.addEventListener('click', function(){
+  handleClicks();
+  menuContainer.classList.remove("hidden");
+})
+
+bookBtn.addEventListener('click', function(){
   handleClicks();
   menuContainer.classList.remove("hidden");
 })

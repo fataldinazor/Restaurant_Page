@@ -24,6 +24,7 @@ body {
   background-image: var(--HomeBGImg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: 10%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -96,13 +97,12 @@ nav > button {
   flex-direction: column;
   height: 300px;
   width: 700px;
-  /* outline: 2px solid red; */
   margin-left: 5rem;
   margin-top: 2rem;
 }
 
 .restName {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 700;
   color: var(--orange2);
   align-self: center;
@@ -110,7 +110,7 @@ nav > button {
 
 .tagline {
   align-self: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--white);
   margin: 0 10px 40px 10px;
 }
@@ -149,14 +149,16 @@ nav > button {
   width: 90%;
 }
 .ourMenu h1{
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 10px;
 }
 .ourMenu p{
   text-align: center;
   color: var(--yellow3);
-  border-bottom: 2px solid var(--yellow2);
+  border-bottom: 2px solid var(--orange2);
   padding-bottom: 20px;
+  font-size: 1.3rem;
 }
 
 .pizzaCards{
@@ -193,7 +195,7 @@ nav > button {
 .pizzaPrice{
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: var(--orange2);
+  background-color: var(--brown3);
   color: var(--white);
   text-align: center;
   padding-top:14px;
@@ -207,7 +209,7 @@ nav > button {
   padding:20px 10px 0px 10px;
 }
 .buyBtn{
-  background-color: var(--brown3);
+  background-color: var(--orange2);
   color: var(--white);
   grid-column: 1/3;
   grid-row:-1/-2;
@@ -216,14 +218,14 @@ nav > button {
 }
 .buyBtn:hover{
   background-color:var(--orange1);
-  /* color: ; */
 }
 .seeBtn{
   width: 150px;
+  font-size: 1.3rem;
   align-self: center;
   background-color: var(--orange2);
   color: var(--white);
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 10px 20px;
   font-weight: 500;
   margin: 20px 0;
@@ -235,14 +237,69 @@ nav > button {
 
 /* contact */
 .contContainer{
-  margin:20px;
-  outline: 1px solid greenyellow;
-}
-.addressContainer{
-  outline:1px solid red;
-  width:50%;
+  margin:auto;
+  background-color: rgba(0, 0, 0, 0.614);
+  border-radius: 20px;
+  width: 90vw;
+  display: flex;
+  margin-top: 20px;
 }
 
+.addressContainer{
+  height: inherit;
+  width:50%;
+  overflow:hidden;
+  padding:20px;
+}
+.addressTitle{
+  font-size: 2rem;
+  color: var(--yellow1);
+}
+.addressLine{
+  padding:10px 0;
+  font-weight: 500;
+}
+.addressImg{
+  object-fit: cover;
+}
+
+.formContainer{
+  height: inherit;
+  width:50%;
+  padding:20px;
+  /* outline: 1px solid red; */
+}
+.formTitle{
+  margin-bottom: 30px;
+  color: var(--yellow1);
+}
+.formLabel{
+  display:block;
+  width:100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.formInput{
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 14px;
+  width: 90%;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 20px;
+  padding:5px 10px;
+  color:black;
+}
+.formBtn{
+  width: 95%;
+  color: var(--white);
+  background-color: var(--orange2);
+  border-radius: 20px;
+  padding:10px 0;
+}
+.formBtn:hover{
+  background-color: var(--yellow1);
+}
 .hidden {
   display: none;
 }

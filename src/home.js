@@ -15,6 +15,7 @@ export function createHomeContent(){
     '"Savor Every Bite: Crafted with Passion, Delivered with Flavor!"';
     tagline.classList.add("tagline");
     const bookBtn = document.createElement("button");
+    bookBtn.classList.add('bookBtn');
     bookBtn.textContent = "Book Now";
     
     homeContainer.appendChild(restName);
