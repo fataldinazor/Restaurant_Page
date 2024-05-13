@@ -22,6 +22,5 @@ export function createHomeContent(){
     homeContainer.appendChild(bookBtn);
     
     content.appendChild(homeContainer);
-
 }
     

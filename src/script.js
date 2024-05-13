@@ -2,6 +2,8 @@
 
 import "./style.css";
 import {createHomeContent} from "./home.js";
+import {createMenuContent } from "./menu.js";
+import {createContContent} from './contact.js';
 
 const nav = document.querySelector("nav");
 const header = document.querySelector("header");
@@ -27,25 +29,41 @@ header.insertBefore(titleName, nav);
 
 
 //functioning 
+createHomeContent();
+createMenuContent();
+createContContent();
+
+const homeContainer = document.querySelector(".homeContainer");
+const menuContainer = document.querySelector(".menuContainer");
+const contContainer=document.querySelector('.contContainer');
+
+
 const homeBtn = document.querySelector("#home");
-const menuBtn=document.querySelector('#home');
-const contBtn=document.querySelector('#cont');
+const menuBtn=document.querySelector('#menu');
+const contBtn=document.querySelector('#contact');
 
 window.addEventListener("load", function (e) {
-  createHomeContent();
-  const homeContainer = document.querySelector(".homeContainer");
-  homeContainer.classList.remove("hidden");
+  contContainer.classList.remove("hidden");
 });
 
 function handleClicks(){
-    createHomeContent();
-    createMenuContent();
-    createContContent();
+    homeContainer.classList.add('hidden');
+    menuContainer.classList.add('hidden');
+    contContainer.classList.add('hidden');
 }
 
 homeBtn.addEventListener('click', function(){
     handleClicks();
-    const homeContainer = document.querySelector(".homeContainer");
     homeContainer.classList.remove("hidden");
+})
+
+menuBtn.addEventListener('click', function(){
+  handleClicks();
+  menuContainer.classList.remove("hidden");
+})
+
+contBtn.addEventListener('click',function(){
+  handleClicks();
+  contContainer.classList.remove('hidden');
 })
 
